@@ -10,7 +10,7 @@ $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $p
 $stmt = $conn->query("SELECT * FROM countries WHERE name LIKE '%$getCountry%'" );
 
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-var_dump($results);
+//var_dump($results);
 
 ?>
 <ul>
